@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+header{
+  background-image: url("https://images.pexels.com/photos/3887985/pexels-photo-3887985.jpeg");
+   height: 280px ;
+   background-size: contain;
+   object-fit: contain;
+   background-clip: unset;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+nav ul{
+  display: flex;
+  justify-content:center;
+  align-items: center ;
+}
+
+li{
+  margin:20px;
+  font-weight: bold;
+  list-style: none;
+}
+nav li>a{
+  color: #fff;
+  text-decoration: none;
+}
