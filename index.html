@@ -5,19 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/main.css">
-
-  <title>ES8 Project</title>
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>G&R</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
+  <script type="module" src="js/main.js" defer></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            xs: "450px",
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="" alt="logo">
+  <header class="my-element relative">
+    <nav class="flex justify-between flex-col  items-end sm:flex-row">
+      <div class="logo invisible sm:visible">
+        <img src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" alt="logo" class="w-10 h10">
       </div>
-      <ul>
-        <li>
+      <i class="material-icons text-white text-2xl mr-4     cursor-pointer lg:hidden md:hidden " id="menuBtn" onclick="">dehaze</i>
+      <ul class="flex flex-col md:bg-[transparent]   absolute top-16 right-2 rounded sm:flex-row sm:relative sm:top-0 bg-[#0000007F] " id="menuLinks">
+        <li class="hover:">
          <a href="">Acceuil</a>
         </li>
         <li>
@@ -33,10 +46,18 @@
            <a href="">Contact</a>
             </li>
       </ul>
-    
     </nav>
+    <div class="flex justify-center items-center relative left-0 bottom-1 top-32 sm:absolute sm:bottom-0  sm:left-[20%] details">
+      <div class="flex justify-center items-center flex-col self-center text-white  detail mb-16">
+        <h1 class="text-xl font-bold m-2  bg-[#0000007F] ">Good food , Good vibes</h1>
+        <p class="m-2 text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci autem corporis distinctio, dolorem ducimus enim fugiat</p>
+        <button class="bg-yellow-600 p-3 rounded m-4 outline-none">Réserver une table</button>
+      </div>
+    </div>
   </header>
+  <section id="about" class="flex flex-col sm:flex sm:flex-row sm:justify-center sm:mt-16 sm:items-center"></section>
+  <section id="menu" class=""></section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-  <script src="config.js"></script>
 </body>
 </html>

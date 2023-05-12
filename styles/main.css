@@ -2,29 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+}
+body{
+    background-color: #222;
+    width: 100%;
 }
 
 header{
-  background-image: url("https://images.pexels.com/photos/3887985/pexels-photo-3887985.jpeg");
-   height: 280px ;
-   background-size: contain;
+  background-image: url("../images/bg.jpeg");
+  background-color: #0000007F;
+   height: 500px ;
+   background-size: cover;
    object-fit: contain;
-   background-clip: unset;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-}
 
-nav ul{
-  display: flex;
-  justify-content:center;
-  align-items: center ;
-}
+
 
 li{
   margin:20px;
@@ -34,4 +29,86 @@ li{
 nav li>a{
   color: #fff;
   text-decoration: none;
+}
+.detail{
+  /*  background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);*/
+}
+
+.details {
+    animation: moveFromBottom 0.5s ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+/*about*/
+
+.imgContainer{
+    margin: 15px;
+    object-fit: contain;
+    animation: moveFromBottom 1s ease-in-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 3s ease forwards;
+}
+
+.animate2 {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: moveFromLeft 2s ease forwards;
+}
+.moveFromRight {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: moveFromRight 3s ease forwards;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes moveFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
