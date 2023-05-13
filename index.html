@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="star-rating-svg.css">
   <title>G&R</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
@@ -50,24 +49,50 @@
       <div class="flex justify-center items-center flex-col self-center text-white  detail mb-16">
         <h1 class="text-xl font-bold m-2  bg-[#0000007F] ">Good food , Good vibes</h1>
         <p class="m-2 text-center text-[#ccc] ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci autem corporis distinctio, dolorem ducimus enim fugiat</p>
-        <button class="bg-yellow-600 p-3 rounded m-4 outline-none">Réserver une table</button>
+        <button class="bg-yellow-500 p-3 rounded m-4 outline-none">Réserver une table</button>
       </div>
     </div>
   </header>
   <section id="about" class="flex flex-col sm:flex sm:flex-row sm:justify-center sm:mt-16 sm:items-center"></section>
   <section id="menu" class="">
 <div class="flex justify-center items-center self-center mt-16 flex-col">
-    <h1 class="text-yellow-600 text-3xl">Menu du jour</h1>
+    <h1 class="text-yellow-500 text-4xl font-bold m-3">Menu du jour</h1>
     <p class="text-[#ccc]">
-    Le lorem ipsum est, en imprimerie, une suite de mots 
+    Le lorem ipsum est, en imprimerie, une suite de mots
     </p>
-    <div id="cardContainer" class="flex flex-wrap  ml-24 sm:ml-1">
-       
+    <div id="cardContainer" class="flex flex-wrap justify-center  self-center sm:ml-1">
     </div>
 </div>
 </section>
+  <section class="mt-32 " id="reservaton"></section>
+  <section  id="avis" class="relative w-full mt-32 text-[#ccc]" data-carousel="slide">
+          <h2 class="text-3xl text-center mt-4">Ce que les gens disent de nous</h2>
+     <div class="carousel flex self-center  m-auto sm:relative sm:w-[50%] " >
+         <div class="item flex items-center w-full  mt-16 p-4 bg-[#0000007F]  active">
+             <img class="mt-16" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+             <p class="ml-32 -mt-16">
+                 Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il
+                 Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il
+             </p>
+         </div>
+         <div class="item flex items-center w-full mt-16 p-4 bg-[#0000007F]">
+             <img class="mt-16" src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+             <p class="ml-32 -mt-16">Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il </p>
+             Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il
+         </div>
+         <div class="item flex items-center w-full  mt-16 p-4 bg-[#0000007F]">
+             <img class="mt-16" src="https://images.pexels.com/photos/819530/pexels-photo-819530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+             <p class="ml-32 -mt-16">Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il </p>
+             Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il
+         </div>
+     </div>
+      <div class="flex justify-center items-center mt-3">
+          <button type="button" class="w-3 h-3 rounded-full bg-yellow-800 m-2" id="btn1" tabindex="0" ></button>
+          <button type="button" class="w-3 h-3 rounded-full bg-yellow-800 m-2" id="btn2" tabindex="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full bg-yellow-800 m-2" id="btn3" tabindex="2"></button>
+      </div>
+  </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script type="module" src="js/main.js" defer></script>
-  <script src="jquery.star-rating-svg.js"></script>
 </body>
 </html>
