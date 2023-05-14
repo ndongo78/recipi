@@ -90,13 +90,19 @@ $(window).scroll(function() {
    if (scrollTop > 200) {
       $('.descript').addClass('animate');
       $(".imgContainer img").addClass('animate2')
-      $(".descript").addClass('moveFromRight')
-      $("#cardContainer").addClass('moveFromBottom')
+      $(".descript").addClass('details')
+      $("#cardContainer").addClass('details')
+      $("#menu div").addClass('details')
+      $("#reservaton div").addClass('animate2')
+       $("#avis div").addClass('details')
    } else {
       $('.descript').removeClass('animate');
       $('.imgContainer img').removeClass('animate2');
-      $('.descript').removeClass('moveFromRight');
-      $('#cardContainer').removeClass('moveFromBottom');
+      $('.descript').removeClass('details');
+      $('#cardContainer').removeClass('details');
+      $('#menu div').removeClass('details');
+      $('#reservaton div').removeClass('animate2');
+      $('#avis div').removeClass('details');
    }
     let x=0;
     let timer=0;
