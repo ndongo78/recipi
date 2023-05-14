@@ -98,4 +98,26 @@ $(window).scroll(function() {
       $('.descript').removeClass('moveFromRight');
       $('#cardContainer').removeClass('moveFromBottom');
    }
+    let x=0;
+    let timer=0;
+   function changeContainer() {
+       const container=document.querySelector(".gallery")
+       /*container.style.transform=`perspective(1000px) rotateX(${x}deg`*/
+       $(".gallery").css("transform", `perspective(1000px) rotateY(${x}deg`);
+       timer=setTimeout(()=>{
+        changeContainer()
+       },2000)
+   }
+
+
+   $(".prev").click((e)=>{
+       x=x-45;
+       clearTimeout(timer)
+       changeContainer()
+   })
+    $(".next").click((e)=>{
+        x=x+45;
+        clearTimeout(timer)
+       changeContainer()
+   })
 });
