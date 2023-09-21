@@ -7,7 +7,7 @@
   <title>G&R</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
-  
+
   <script>
     tailwind.config = {
       theme: {
@@ -96,7 +96,7 @@
           <button type="button" class="w-3 h-3 rounded-full bg-yellow-800 m-2" id="btn3" tabindex="2"></button>
       </div>
   </section>
-  <section id="#blog">
+  <section id="#blog" class="w-[500px] flex flex-col items-center justify-center m-auto">
       <h2 class="text-3xl text-center mt-4 text-[#ccc]">Gallery</h2>
      <div class="gallery">
           <span style="--i: 1">
@@ -130,6 +130,11 @@
           </button>
           <button class="btn next text-white"><i class="material-icons text-white text-2xl">navigate_next</i></button>
       </div>
+  </section>
+  <section id="contact" class=""></section>
+  <section class="flex items-center self-center justify-center mt-4">
+      <p class="text-white mr-2 italic">All droits</p>
+      <p id="cpy" class="flex items-center self-center justify-center text-white text-xl italic" > </p>
   </section>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script type="module" src="js/main.js" defer></script>

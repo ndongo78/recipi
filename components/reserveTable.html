@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/systemjs@0.19.47/dist/system.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        xs: "450px",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+
+        /* reservation*/
+        .labelR{
+            color:blueviolet;
+            font-weight:400;
+            display: flex;
+            position:relative;
+            margin-right: 10px
+        }
+        .labelR span{
+            color:red;
+            position: absolute;
+            right: -7px;
+        }
+        .search_container{
+            background: #fffcfc;
+            height: 45px;
+            border-radius: 30px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.8s;
+            box-shadow:  4px 4px 6px 0 rgba(54, 52, 52, 0.3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2),
+            inset -4px -4px 6px 0 rgba(255,255,255,.2),
+            inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+            width: 300px;
+        }
+
+        .search_input{
+            background: transparent;
+            border: none;
+            outline:none;
+            width: 220px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: 0.8s;
+        }
+        .search_input::placeholder {
+            color:#000;
+            opacity: .3;
+            font-style: oblique;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+ <div class="h-screen bg-[#222]">
+     <h2 class="text-xl text-center sm:text-3xl sm:pt-8 font-bold text-yellow-500">Reservation de tables</h2>
+
+         <form action="" class=" h-full flex flex-col justify-center self-center items-center">
+             <div class="search_container">
+             <label class="labelR"  ><span>*</span> NOM</label><label>
+             <input type="text" placeholder="Votre Nom" class="search_input outline-none" id="nom">
+             </label>
+             </div>
+             <div class="search_container">
+             <label class="labelR"  ><span>*</span> Prénom</label><label>
+             <input type="text" placeholder="Votre Nom" id="prenom" class="search_input outline-none">
+             </label>
+             </div>
+         </form>
+ </div>
+</body>
+</html>

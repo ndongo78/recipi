@@ -89,7 +89,7 @@ nav li>a{
     align-items: center;
 }
 .gallery{
-    width:300px;
+    width: 150px;
     min-height: 200px;
     position: relative;
     transform-style: preserve-3d;
@@ -115,15 +115,13 @@ span img{
     border-radius: 20px;
 }
 
-.buttons{
-
-}
 .buttons .prev{
     position: absolute;
+    left: 0;
 }
 .buttons .next{
     position: absolute;
-    right: 10px;
+    right: 0px;
 }
 .prev i{
     font-size: 85px;
@@ -132,8 +130,11 @@ span img{
     font-size: 85px;
 
 }
+/*contact*/
 
-
+#contact{
+    margin-top: 20px;
+}
 
 .animate {
     opacity: 0;
@@ -151,7 +152,6 @@ span img{
     transform: translateX(50px);
     animation: moveFromRight 3s ease forwards;
 }
-
 
 @keyframes fadeInUp {
     from {

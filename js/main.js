@@ -6,6 +6,7 @@ import {menuItems} from "../js/menu.js"
 $(document).ready(function() {
     $("#about").load("../components/about.html")
     $("#reservaton").load("../components/reservation.html")
+    $("#contact").load("../components/contact.html")
    // $("#avis").load("../components/avis.html")
   $(".detail").slideDown();
    $("#menuBtn").click(function (e) {
@@ -127,3 +128,5 @@ $(window).scroll(function() {
        changeContainer()
    })
 });
+
+$("#cpy").html(`<i class="material-icons text-white text-4xl">copyright</i> ${new Date().getFullYear()}`);
